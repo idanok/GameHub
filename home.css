@@ -121,7 +121,7 @@ body {
 .product button {
     margin: 1rem;
     padding: 0.5rem 1rem;
-    background: #697F8C;
+    background-color: #374D5B;
     border: none;
     border-radius: 5px;
     color: white;
@@ -214,3 +214,4 @@ body {
         text-align: center;
     }
 }
+

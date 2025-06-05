@@ -11,13 +11,6 @@ body {
     height: 2px;
 }
 
-.small-header {
-    background-color: #697F8C;
-    color: #fff;
-    text-align: center;
-    font-size: 8px;
-    padding: 1px 30px;
-}
 
 @media (min-width: 769px) and (max-width: 1024px) {
     .small-header {
