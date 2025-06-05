@@ -249,7 +249,7 @@ body {
 }
 
 .complete-order-button {
-    display: flex; /* changed from block */
+    display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -279,8 +279,6 @@ body {
     text-align: center;
 }
 
-
-/* Mobile-specific adjustments */
 @media (max-width: 480px) {
     .checkout-container {
         padding: 0 0.5rem;

@@ -7,7 +7,7 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
-// Show loading indicator
+// Show loading indicator and cart functionallity 
 document.addEventListener("DOMContentLoaded", () => {
     const orderItemsContainer = document.getElementById("order-items-container");
     const subtotalElem = document.getElementById("subtotal-amount");

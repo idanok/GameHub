@@ -1,3 +1,4 @@
+// Hamburger menu
 function openNav() {
     document.getElementById("myNav").style.height = "100%";
 }
@@ -6,6 +7,7 @@ function closeNav() {
     document.getElementById("myNav").style.height = "0%";
 }
 
+// Loading indicator
 function showLoading() {
     const loader = document.getElementById("loading-indicator");
     if (loader) loader.classList.remove("hidden");
@@ -16,6 +18,7 @@ function hideLoading() {
     if (loader) loader.classList.add("hidden");
 }
 
+// Cart functionality 
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const existing = cart.find(item => item.id === product.id);

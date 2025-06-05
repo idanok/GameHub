@@ -60,7 +60,6 @@ filterForm.addEventListener('submit', async function (event) {
 
 });
 
-// Render products to page
 function displayProducts(products) {
     productContainer.innerHTML = '';
 

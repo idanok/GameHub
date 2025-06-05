@@ -1,7 +1,5 @@
 @import url("../global.css");
 
-/* product.css */
-
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -15,12 +13,12 @@ body {
     font-size: 1.2rem;
     color: #333;
     margin-top: 2rem;
-  }
-  
-  .hidden {
+}
+
+.hidden {
     display: none;
-  }
-  
+}
+
 .product-detail-card {
     display: flex;
     flex-direction: column;
@@ -75,7 +73,6 @@ body {
     background-color: teal;
 }
 
-/* Responsive design */
 @media (min-width: 768px) {
     .product-detail-card {
         flex-direction: row;

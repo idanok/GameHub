@@ -13,12 +13,12 @@ body {
     font-size: 1.2rem;
     color: #333;
     margin-top: 2rem;
-  }
-  
-  .hidden {
+}
+
+.hidden {
     display: none;
-  }
-  
+}
+
 .main-text {
     padding: 1rem 1.5rem;
     max-width: 700px;
@@ -214,4 +214,3 @@ body {
         text-align: center;
     }
 }
-

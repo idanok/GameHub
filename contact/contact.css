@@ -14,12 +14,11 @@ body {
     font-size: 1.2rem;
     color: #333;
     margin-top: 2rem;
-  }
-  
-  .hidden {
-    display: none;
-  }
+}
 
+.hidden {
+    display: none;
+}
 
 .contact-wrapper {
     display: flex;

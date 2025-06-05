@@ -15,8 +15,6 @@ window.addEventListener("load", () => {
     if (mainContent) mainContent.style.display = "block";
 });
 
-
-
 // Cart functionality
 function addToCart(product) {
     try {

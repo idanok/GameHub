@@ -16,7 +16,6 @@ loadingIndicator.id = "loading-indicator";
 loadingIndicator.textContent = "Loading product details...";
 productContainer.appendChild(loadingIndicator);
 
-// Fetch product and handle logic
 async function fetchProductDetails() {
     if (!productId) {
         productContainer.innerHTML = "<p>No product selected.</p>";
@@ -39,8 +38,8 @@ async function fetchProductDetails() {
     } finally {
         loadingIndicator.remove();
     }
-    loadingIndicator.classList.remove("hidden"); // Show
-    loadingIndicator.classList.add("hidden");   // Hide
+    loadingIndicator.classList.remove("hidden"); 
+    loadingIndicator.classList.add("hidden");
 }
 
 function displayProduct(product) {
@@ -71,6 +70,7 @@ function displayProduct(product) {
     });
 }
 
+// Cart functionality 
 function addToCart(product) {
     let cart = JSON.parse(localStorage.getItem("cart")) || [];
     const existing = cart.find(item => item.id === product.id);

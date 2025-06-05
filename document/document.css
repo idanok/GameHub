@@ -13,11 +13,11 @@ body {
     font-size: 1.2rem;
     color: #333;
     margin-top: 2rem;
-  }
-  
-  .hidden {
+}
+
+.hidden {
     display: none;
-  }
+}
 
 .privacy-policy h2 {
     font-size: 22px;
@@ -217,4 +217,3 @@ body {
         margin-bottom: 350px;
     }
 }
-
