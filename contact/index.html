@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Feel free to contact us on our phone or email .">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ida Nøkland">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <title>Contact page</title>
+</head>
+
+<body>
+    <header class="small-header">
+        <p>BIG WINTER SALE!</p>
+        <p>UP TO 50% DISCOUNT</p>
+        <p>SALE ENDS 29TH OF FEBRUARY</p>
+    </header>
+
+    <header>
+        <a href="../index.html">
+            <section class="logo">
+                <img src="../img/logo.png" alt="blue logo with mountains at the top, rainy days text in capital letters in the middle and the text: Pushing the comfort zone, underneath">
+            </section>
+        </a>
+
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒<span id="cart-count">0</span>
+        </div>
+
+        <div id="cart-dropdown" class="cart-dropdown hidden">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p id="cart-total"></p>
+            <button id="checkout-button">Go to Checkout</button>
+        </div>
+
+        <section class="bar-container">
+            <nav id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <nav class="overlay-content">
+                    <a href="../index.html">Home</a>
+                    <a href="../about/index.html">About</a>
+                    <a href="index.html">Contact</a>
+                    <a href="../document/index.html">Document</a>
+                </nav>
+            </nav>
+            <span class="menu-icon" onclick="openNav()">&#9776;</span>
+        </section>
+    </header>
+
+    <hr class="header-line">
+
+    <main class="content"></main>
+
+    <div id="loading-indicator" aria-live="polite" class="loading" style="display:none">Loading...</div>
+
+    <main class="contact-wrapper">
+        <section class="contact-form">
+            <h1>Contact Us</h1>
+            <form id="contact-form">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+
+        <section class="contact-information">
+            <h2>Contact Information</h2>
+            <div class="contact-info-item">
+                <img src="../img/call.png" alt="Phone icon">
+                <p>12 345 678</p>
+            </div>
+            <div class="contact-info-item">
+                <img src="../img/email.png" alt="Email icon">
+                <p>GameHub@hotmail.com</p>
+            </div>
+            <div class="contact-socials">
+                <img src="../img/instagram.png" alt="Instagram">
+                <img src="../img/twitter.png" alt="Twitter">
+                <img src="../img/tiktok.png" alt="TikTok">
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-content">
+            <section class="logo">
+                <img src="../img/logo.png" alt="white logo with mountains at the top, rainy days text in capital letters in the middle and the text: Pushing the comfort zone, underneath">
+            </section>
+
+            <section class="membership">
+                <h3>Become a member</h3>
+                <p>Sign up for our newsletter and<br>get special offers and discounts<br></p>
+                <section class="signup-container">
+                    <input placeholder="Email:" aria-label="Newsletter email">
+                    <button>Sign Up</button>
+                </section>
+            </section>
+
+            <nav class="social-icons">
+                <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="../img/tiktok.png" alt="TikTok"></a>
+            </nav>
+        </section>
+    </footer>
+
+    <script defer src="contact.js"></script>
+</body>
+
+</html>

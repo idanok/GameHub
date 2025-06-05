@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Your order has been successful and will be sent within 1-2 days.">
+    <meta name="author" content="Ida Nøkland">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="global.css">
+    <title>Order Confirmation</title>
+</head>
+
+<body>
+    <header class="small-header">
+        <p>BIG WINTER SALE!</p>
+        <p>UP TO 50% DISCOUNT</p>
+        <p>SALE ENDS 29TH OF FEBRUARY</p>
+    </header>
+
+    <header>
+        <a href="../index.html" aria-label="Go to homepage">
+            <section class="logo">
+                <img src="../../../img/logo.png" alt="Rainy Days logo">
+            </section>
+        </a>
+
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒<span id="cart-count">0</span>
+        </div>
+
+        <div id="cart-dropdown" class="cart-dropdown hidden">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p id="cart-total"></p>
+            <button id="checkout-button">Go to Checkout</button>
+        </div>
+
+        <nav id="myNav" class="overlay" aria-label="Main navigation">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close navigation">&times;</a>
+            <nav class="overlay-content">
+                <a href="../../../index.html">Home</a>
+                <a href="../../../about/index.html">About</a>
+                <a href="../../../contact/index.html">Contact</a>
+                <a href="../../../document/index.html">Document</a>
+            </nav>
+        </nav>
+
+        <span class="menu-icon" onclick="openNav()" aria-label="Open menu">&#9776;</span>
+    </header>
+
+    <hr class="header-line">
+
+    <div id="loading-indicator">Loading...</div>
+
+    <main class="content"></main>
+
+    <main class="main-content" style="display: none;">
+        <!-- Content here -->
+    </main>
+    
+
+        <section class="our-team">
+            <h2>MEET OUR TEAM</h2>
+            <section class="slideshow-container">
+                <section class="mySlides fade">
+                    <section class="numbertext">1 / 6</section>
+                    <img src="../img/elsa.jpg" style="width:100%">
+                    <section class="text">Elsa Aakervik</section>
+                </section>
+
+                <section class="mySlides fade">
+                    <section class="numbertext">2 / 6</section>
+                    <img src="../img/sofie.jpg" style="width:100%">
+                    <section class="text">Sofie Nordskog Haugen</section>
+                </section>
+
+                <section class="mySlides fade">
+                    <section class="numbertext">3 / 6</section>
+                    <img src="../img/nora.jpg" style="width:100%">
+                    <section class="text">Nora Omland</section>
+                </section>
+
+                <section class="mySlides fade">
+                    <section class="numbertext">4 / 6</section>
+                    <img src="../img/sivert.jpg" style="width:100%">
+                    <section class="text">Sivert Lysgård</section>
+                </section>
+
+                <section class="mySlides fade">
+                    <section class="numbertext">5 / 6</section>
+                    <img src="../img/aurora.jpg" style="width:100%">
+                    <section class="text">Aurora Jespersen</section>
+                </section>
+
+                <section class="mySlides fade">
+                    <section class="numbertext">6 / 6</section>
+                    <img src="../img/siri.jpg" style="width:100%">
+                    <section class="text">Siri Granås Bakken</section>
+                </section>
+
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </section>
+
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+            </div>
+
+            <p>At GameHub, our team of six passionate professionals brings a diverse set of skills to the world of gaming.
+                Elsa is our CEO and financial controller, keeping our vision strong and our operations running smoothly.
+                Sofie, our marketing manager, leads all advertising efforts and manages our presence across social media platforms.
+                Nora and Sivert serve as our market researcher and designer duo. They not only shape the look and feel of GameHub but also collaborate closely with game publishers and distributors.
+                Aurora is our talented photographer, capturing high-quality visuals for our website and social channels to showcase the latest games.
+                Siri is our tech manager, responsible for maintaining our website and ensuring all IT services are running flawlessly.
+            </p>
+            </div>
+
+            <section class="our-story">
+                <img src="../img/our-story3.jpg" alt="black wall with the white text: dream big. in capital letters."
+                    class="story-image">
+                <h2>OUR STORY</h2>
+                <p>We’re a group of close friends brought together by a shared passion for video games and digital adventures.
+                    From epic quests and competitive matches to immersive storytelling, gaming has always been a big part of our lives.
+                    That’s why we created GameHub—a place where we can share our love for games with others and help fellow gamers discover
+                    their next favorite title. We believe in promoting a fun, inclusive, and sustainable gaming culture, and we’re committed
+                    to offering a curated selection of quality games across genres like action, adventure, sports, and horror.
+                </p>
+            </section>
+
+            <section class="our-focus">
+                <img src="../img/our-focus7.jpg" alt="picture of the sky, trees, mountains and ocean" class="focus-image">
+                <h2>OUR FOCUS</h2>
+                <p>The gaming industry is rapidly expanding, and with it comes a responsibility to consider its environmental and social impact.
+                    At GameHub, we're committed to making gaming more sustainable. While we offer digital products, we also strive to reduce our
+                    carbon footprint through eco-conscious business practices. We prioritize digital distribution to minimize packaging waste,
+                    partner with developers who value environmental responsibility, and host our services on energy-efficient servers. Whenever
+                    possible, we support local creators and collaborate with game publishers who share our values. We're determined to do our part
+                    for a more sustainable future in gaming.
+                </p>
+            </section>
+    </main>
+
+    <footer class="site-footer">
+        <section class="footer-content">
+            <section class="logo">
+                <img src="../../../img/logo.png" alt="Rainy Days footer logo">
+            </section>
+
+            <section class="membership">
+                <h3>Become a member</h3>
+                <p>Sign up for our newsletter and get special offers and discounts.</p>
+                <section class="signup-container">
+                    <input type="email" placeholder="Email:" aria-label="Email address">
+                    <button type="submit">Sign Up</button>
+                </section>
+            </section>
+
+            <nav class="social-icons" aria-label="Social media links">
+                <a href="#"><img src="../../../img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../../../img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="../../../img/tiktok.png" alt="TikTok"></a>
+            </nav>
+        </section>
+    </footer>
+
+    <script defer src="about.js"></script>
+</body>
+
+</html>

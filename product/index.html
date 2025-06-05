@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Read more about your selected rain jacket">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ida Nøkland">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="product.css">
+    <title>Jacket specific page</title>
+</head>
+
+<body>
+    <header class="small-header">
+        <p>BIG WINTER SALE!</p>
+        <p>UP TO 50% DISCOUNT</p>
+        <p>SALE ENDS 29TH OF FEBRUARY</p>
+    </header>
+
+    <header>
+        <a href="../index.html">
+            <section class="logo">
+                <img src="../img/logo.png" alt="Rainy Days logo">
+            </section>
+        </a>
+
+        <div class="cart-icon" onclick="toggleCart()">
+            🛒<span id="cart-count">0</span>
+        </div>
+
+        <div id="cart-dropdown" class="cart-dropdown hidden" aria-label="Shopping cart dropdown">
+            <h3>Your Cart</h3>
+            <ul id="cart-items" aria-live="polite"></ul>
+            <p id="cart-total"></p>
+            <button id="checkout-button">Go to Checkout</button>
+        </div>
+
+        <section class="bar-container">
+            <nav id="myNav" class="overlay" aria-label="Site navigation menu">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Close menu">&times;</a>
+                <nav class="overlay-content">
+                    <a href="../index.html">Home</a>
+                    <a href="../about/index.html">About</a>
+                    <a href="../contact/index.html">Contact</a>
+                    <a href="../document/index.html">Document</a>
+                </nav>
+            </nav>
+            <span class="menu-icon" onclick="openNav()" aria-label="Open menu">&#9776;</span>
+        </section>
+    </header>
+
+    <hr class="header-line">
+    <p id="loading-indicator" class="hidden">Loading products...</p>
+    <div id="product-detail"></div>
+
+    <footer class="site-footer">
+        <section class="footer-content">
+            <section class="logo">
+                <img src="../img/logo.png" alt="Rainy Days white logo">
+            </section>
+
+            <section class="membership">
+                <h3>Become a member</h3>
+                <p>Sign up for our newsletter and<br>get special offers and discounts<br></p>
+                <section class="signup-container">
+                    <input placeholder="Email:" aria-label="Email signup">
+                    <button>Sign Up</button>
+                </section>
+            </section>
+
+            <nav class="social-icons" aria-label="Social media links">
+                <a href="#"><img src="../img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="../img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="../img/tiktok.png" alt="TikTok"></a>
+            </nav>
+        </section>
+    </footer>
+
+    <script defer src="product.js"></script>
+</body>
+
+</html>

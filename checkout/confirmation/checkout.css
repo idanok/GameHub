@@ -1,0 +1,317 @@
+@import url("../../global.css");
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+#loading-indicator {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.checkout-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 1100px;
+    margin: 2rem auto 4rem;
+    gap: 2rem;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .checkout-container {
+        flex-direction: row;
+        align-items: flex-start;
+        flex-wrap: wrap;
+    }
+}
+
+.order-summary-card {
+    flex: 1 1 350px;
+    border: 2px solid #000;
+    border-radius: 5px;
+    padding: 2rem;
+    background-color: #f9f9f9;
+    min-width: 280px;
+    width: 100%;
+}
+
+.order-summary-card h3 {
+    margin-bottom: 1.5rem;
+    font-size: 1.8rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.3rem;
+}
+
+#order-items-container {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 1.5rem;
+}
+
+.gamehub-content {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    width: 100%;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    align-items: flex-start;
+}
+
+.gamehub-image {
+    flex: 0 0 100px;
+    height: 100px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+@media (min-width: 768px) {
+    .gamehub-image {
+        flex: 0 0 120px;
+        height: 120px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gamehub-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .gamehub-image {
+        width: 100%;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+.gamehub-details {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.gamehub-details h4 {
+    margin: 0 0 10px 0;
+    font-size: 1.1rem;
+}
+
+.gamehub-details p {
+    margin: 5px 0;
+    font-size: 0.95rem;
+}
+
+.gamehub-details label {
+    font-size: 0.9rem;
+    margin-top: 5px;
+}
+
+.qty-input {
+    width: 60px;
+    padding: 4px;
+    margin-left: 8px;
+    border-radius: 4px;
+    border: 1px solid #697F8C;
+    font-size: 1rem;
+}
+
+.remove-item {
+    background-color: #e65c39;
+    color: white;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    align-self: flex-start;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.remove-item:hover {
+    background-color: #bf4a29;
+}
+
+.sub-total,
+.order-total {
+    display: flex;
+    justify-content: space-between;
+    font-weight: bold;
+    font-size: 1.1rem;
+    border-top: 1px solid #ccc;
+    padding-top: 1rem;
+}
+
+.order-total {
+    margin-top: 1rem;
+    font-size: 1.3rem;
+}
+
+.checkout-info {
+    flex: 2 1 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    min-width: 280px;
+    width: 100%;
+}
+
+.shipping-information-card,
+.payment-method-card {
+    border: 2px solid #000;
+    border-radius: 5px;
+    background: #fff;
+    padding: 2rem;
+    box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+
+.shipping-information-card h1,
+.payment-method-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 1px solid #000;
+    padding-bottom: 0.3rem;
+}
+
+.shipping-information-card input {
+    width: 100%;
+    padding: 0.6rem;
+    margin-bottom: 1rem;
+    border: 1px solid #333;
+    border-radius: 4px;
+    font-size: 1rem;
+}
+
+.horizontally-aligned {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.payment-method-card button {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    background: #fff;
+    border: 1px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.payment-method-card button:hover {
+    background-color: #eee;
+}
+
+.payment-method-card button span {
+    flex-grow: 1;
+}
+
+.payment-method-card img {
+    max-height: 30px;
+    max-width: 50px;
+    margin-left: 0.5rem;
+    object-fit: contain;
+}
+
+.card-image,
+.paypal-image,
+.klarna-image {
+    width: 35px;
+    height: auto;
+    margin-left: 0.5rem;
+}
+
+.complete-order-button {
+    display: flex; /* changed from block */
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 200px;
+    margin: 2rem auto 0;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: #7B8E9A;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.complete-order-button:hover {
+    background-color: #5a6b75;
+}
+
+.complete-order-button a {
+    color: white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Mobile-specific adjustments */
+@media (max-width: 480px) {
+    .checkout-container {
+        padding: 0 0.5rem;
+    }
+
+    .order-summary-card,
+    .shipping-information-card,
+    .payment-method-card {
+        padding: 1rem;
+    }
+
+    .complete-order-button {
+        font-size: 1.1rem;
+        padding: 0.8rem;
+    }
+
+    .shipping-information-card input {
+        font-size: 0.95rem;
+    }
+
+    .payment-method-card button {
+        font-size: 0.95rem;
+        padding: 0.6rem;
+    }
+
+    .gamehub-details h4 {
+        font-size: 1rem;
+    }
+
+    .gamehub-details p,
+    .gamehub-details label {
+        font-size: 0.85rem;
+    }
+}

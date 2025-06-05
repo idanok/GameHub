@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Discover our quality and price-friendly rain jackets.">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="Ida Nøkland">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Home page</title>
+</head>
+
+<body>
+    <header class="small-header">
+        <p>BIG WINTER SALE!</p>
+        <p>UP TO 50% DISCOUNT</p>
+        <p>SALE ENDS 29TH OF FEBRUARY</p>
+    </header>
+
+    <header>
+        <a href="index.html" aria-label="Go to homepage">
+            <section class="logo">
+                <img src="img/logo.png" alt="Rainy Days company logo with mountains and slogan">
+            </section>
+        </a>
+
+        <div class="cart-icon" onclick="toggleCart()" aria-label="Toggle shopping cart">
+            🛒<span id="cart-count">0</span>
+        </div>
+
+        <div id="cart-dropdown" class="cart-dropdown hidden" aria-label="Cart dropdown">
+            <h3>Your Cart</h3>
+            <ul id="cart-items"></ul>
+            <p id="cart-total"></p>
+            <button id="checkout-button">Go to Checkout</button>
+        </div>
+
+        <section class="bar-container">
+            <nav id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+                    aria-label="Close navigation">&times;</a>
+                <nav class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="../about/index.html">About</a>
+                    <a href="../contact/index.html">Contact</a>
+                    <a href="../document/index.html">Document</a>
+                </nav>
+            </nav>
+            <span class="menu-icon" onclick="openNav()" aria-label="Open navigation menu">&#9776;</span>
+        </section>
+    </header>
+
+    <hr class="header-line">
+
+    <section class="main-text">
+        <h1>🎮 Level Up Your Fun!</h1>
+        <p>Explore epic worlds, conquer new challenges, and unlock hours of excitement with our handpicked collection of video games.
+            Start your next adventure today!</p>
+    </section>
+
+
+    <form class="filter" aria-label="Filter products">
+        <label for="genre">Filter by genre:</label>
+        <select id="genre" name="genre">
+            <option value="all">All</option>
+            <option value="Action">Action</option>
+            <option value="Adventure">Adventure</option>
+            <option value="Sports">Sports</option>
+            <option value="Horror">Horror</option>
+        </select>
+        <button type="submit">Apply filter</button>
+    </form>
+
+    <div id="loading" class="hidden">Loading...</div>
+    <div id="product-container" class="product-grid"></div>
+
+    <footer class="site-footer">
+        <section class="footer-content">
+            <section class="logo">
+                <img src="img/logo.png" alt="Rainy Days footer logo">
+            </section>
+
+            <section class="membership">
+                <h3>Become a member</h3>
+                <p>Sign up for our newsletter and get special offers and discounts</p>
+                <section class="signup-container">
+                    <label for="email-signup" class="visually-hidden">Email:</label>
+                    <input id="email-signup" placeholder="Email:" aria-label="Email">
+                    <button>Sign Up</button>
+                </section>
+            </section>
+
+            <nav class="social-icons" aria-label="Social media links">
+                <a href="#"><img src="img/instagram.png" alt="Instagram"></a>
+                <a href="#"><img src="img/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="img/tiktok.png" alt="TikTok"></a>
+            </nav>
+        </section>
+    </footer>
+
+    <script defer src="home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+@import url("../global.css");
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#loading-indicator {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #333;
+    margin-top: 2rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.main-content {
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+
+
+
+.main-content h1 {
+    text-align: center;
+    margin-bottom: 60px;
+    font-size: 25px;
+}
+
+.main-content h2 {
+    font-size: 20px;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 40px;
+}
+
+.main-content p {
+    text-align: left;
+    width: 80%;
+    font-size: 15px;
+    margin-left: 40px;
+    line-height: 1.5;
+    margin-top: 20px;
+    margin-bottom: 100px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .main-content h1 {
+        font-size: 30px;
+    }
+
+    .main-content h2 {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .main-content p {
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 150px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .main-content h1 {
+        font-size: 30px;
+    }
+
+    .main-content h2 {
+        font-size: 25px;
+        margin-bottom: 40px;
+    }
+
+    .main-content p {
+        font-size: 20px;
+        margin-top: 40px;
+        margin-bottom: 150px;
+    }
+
+}
+
+* {
+    box-sizing: border-box
+}
+
+.slideshow-container {
+    width: 300px;
+    height: 430px;
+    position: relative;
+    margin: auto;
+    justify-content: center;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.text {
+    color: #000000;
+    font-size: 18px;
+    padding: 10px 0px;
+    text-align: left;
+}
+
+.slideshow-container img {
+    width: 100%;
+    height: 400px;
+    border-radius: 5px;
+}
+
+.numbertext {
+    color: #000000;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+.dot {
+    cursor: pointer;
+    height: 10px;
+    width: 10px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+    margin-top: 20px;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.our-team h2 {
+    text-align: center;
+    margin-top: -650px;
+}
+
+.our-team p {
+    font-size: 16px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .slideshow-container {
+        width: 350px;
+        height: 490px;
+    }
+
+    .text {
+        font-size: 22px;
+    }
+
+    .slideshow-container img {
+        width: 100%;
+        height: 450px;
+    }
+
+    .numbertext {
+        font-size: 15px;
+    }
+
+    .dot {
+        height: 12px;
+        width: 12px;
+    }
+
+    .our-team h2 {
+        text-align: center;
+        margin-top: -650px;
+        font-size: 25px;
+    }
+
+    .our-team p {
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 80px;
+        margin-right: 80px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .slideshow-container {
+        width: 400px;
+        height: 590px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+
+    .slideshow-container img {
+        width: 100%;
+        height: 550px;
+    }
+
+    .numbertext {
+        font-size: 18px;
+    }
+
+    .dot {
+        height: 14px;
+        width: 14px;
+    }
+
+    .our-team h2 {
+        text-align: center;
+        margin-top: -650px;
+        font-size: 35px;
+    }
+
+    .our-team p {
+        font-size: 30px;
+        margin-top: 70px;
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+.our-story h2 {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 30px;
+}
+
+.our-story p {
+    margin-bottom: 50px;
+    font-size: 16px;
+}
+
+.story-image {
+    width: 400px;
+    height: auto;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .our-story h2 {
+        margin-top: 40px;
+        text-align: left;
+        font-size: 25px;
+        margin-left: 80px;
+    }
+
+    .our-story p {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+    .story-image {
+        width: 700px;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .our-story h2 {
+        margin-top: 50px;
+        text-align: left;
+        font-size: 35px;
+        margin-left: 100px;
+    }
+
+    .our-story p {
+        font-size: 30px;
+    }
+
+    .story-image {
+        width: 900px;
+        height: auto;
+        margin-top: 20px;
+        margin-left: 100px;
+    }
+}
+
+.our-focus h2 {
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.our-focus p {
+    font-size: 16px;
+    margin-bottom: 100px;
+}
+
+.focus-image {
+    width: 400px;
+    height: auto;
+    margin-top: 50px;
+    margin-left: 30px;
+}
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .our-focus h2 {
+        margin-top: 25px;
+        text-align: left;
+        margin-left: 80px;
+    }
+
+    .our-focus p {
+        font-size: 20px;
+        margin-bottom: 150px;
+    }
+
+    .focus-image {
+        width: 700px;
+        height: auto;
+        margin-top: 80px;
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 1025px) {
+    .our-focus h2 {
+        margin-top: 50px;
+        text-align: left;
+        font-size: 35px;
+        margin-left: 100px;
+    }
+
+    .our-focus p {
+        font-size: 30px;
+        margin-bottom: 250px;
+    }
+
+    .focus-image {
+        width: 900px;
+        height: auto;
+        margin-top: 150px;
+        margin-left: 100px;
+    }
+}
